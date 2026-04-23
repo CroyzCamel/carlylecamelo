@@ -3,22 +3,16 @@ import { projects } from '../data'; // Nosso banco de dados local!
 
 function Projects() {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+
+    <section id="projetos" className="py-20 px-6 max-w-6xl mx-auto">
       
-      {/* Título da Seção */}
       <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-3">
         <span className="text-blue-500">#</span> Projetos em Destaque
       </h2>
 
-      {/* A MÁGICA DO GRID
-        grid-cols-1: 1 coluna no celular.
-        md:grid-cols-2: 2 colunas em telas médias/grandes (Tablets e PCs).
-        gap-8: O respiro (espaço) perfeito entre os cartões.
-      */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         {projects.map((projeto) => (
-          // O Cartão do Projeto
           <div 
             key={projeto.id} 
             className="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300 group shadow-lg shadow-slate-900/50"
