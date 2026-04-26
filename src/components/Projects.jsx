@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects } from '../data'; // Nosso banco de dados local!
+import { projects } from '../data'; 
 
 function Projects() {
   return (
